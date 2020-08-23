@@ -38,8 +38,8 @@ def dashboard(request):
     elif h < 16:
         s=f'Good Afternoon'
     else:
-        s=f'Good Night'
+        s=f'Good Evening'
     return render(request,
                   'account/dashboard.html',
                   {'section': dashboard,
-                   'time':s })
+                   'time': s})
